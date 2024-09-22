@@ -1,0 +1,111 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    char column='A';
+    char b[]=new char [16];
+    b[0]='*';
+    b[1]='*';
+    b[2]='*';
+    b[3]='*';
+    b[4]='*';
+    b[5]='*';
+    b[6]='*';
+    b[7]='*';
+    b[8]='*';
+    b[9]='*';
+    b[10]='*';
+    b[11]='*';
+    b[12]='*';
+    b[13]='*';
+    b[14]='*';
+    b[15]='*';
+    System.out.println(b[0]+" "+b[1]+" "+b[2]+" "+b[3]);
+    System.out.println(b[4]+" "+b[5]+" "+b[6]+" "+b[7]);
+    System.out.println(b[8]+" "+b[9]+" "+b[10]+" "+b[11]);
+    System.out.println(b[12]+" "+b[13]+" "+b[14]+" "+b[15]);
+
+  while(true){
+    System.out.println("Choose column A,B,C,D");
+    column=sc.next().toUpperCase().charAt(0);
+    System.out.print("\033[H\033[2J");
+    System.  out.  flush();
+    
+    if (column=='A')
+    {
+      for (int y=0; y<=12; y=y+4)
+        {
+          if (y==12) b[y]='o';
+          char temp=b[y];
+          b[y]='o';
+          System.out.println(b[0]+" "+b[1]+" "+b[2]+" "+b[3]);
+          System.out.println(b[4]+" "+b[5]+" "+b[6]+" "+b[7]);
+          System.out.println(b[8]+" "+b[9]+" "+b[10]+" "+b[11]);
+          System.out.println(b[12]+" "+b[13]+" "+b[14]+" "+b[15]);
+          if (y==12) break;
+          b[y]=temp;
+
+          System.out.print("\033[H\033[2J");
+          System.out.flush();
+        }
+    }
+    if (column=='B')
+    {
+      for (int y=1; y<=13; y=y+4)
+        {
+          if (y==13) b[y]='o';
+          char temp=b[y];
+          b[y]='o';
+          System.out.println(b[0]+" "+b[1]+" "+b[2]+" "+b[3]);
+          System.out.println(b[4]+" "+b[5]+" "+b[6]+" "+b[7]);
+          System.out.println(b[8]+" "+b[9]+" "+b[10]+" "+b[11]);
+          System.out.println(b[12]+" "+b[13]+" "+b[14]+" "+b[15]);
+          if (y==13) break;
+          b[y]=temp;
+
+          
+          System.out.print("\033[H\033[2J");
+          System.out.flush();
+        }
+    }
+    if (column=='C')
+    {
+      for (int y=2; y<=14; y=y+4)
+        {
+          if (y==14) b[y]='o';
+          char temp=b[y];
+          b[y]='o';
+          System.out.println(b[0]+" "+b[1]+" "+b[2]+" "+b[3]);
+          System.out.println(b[4]+" "+b[5]+" "+b[6]+" "+b[7]);
+          System.out.println(b[8]+" "+b[9]+" "+b[10]+" "+b[11]);
+          System.out.println(b[12]+" "+b[13]+" "+b[14]+" "+b[15]);
+          if (y==14) break;
+          b[y]=temp;
+
+          
+          System.out.print("\033[H\033[2J");
+          System.out.flush();
+        }
+    }
+    if (column=='D')
+    {
+      for (int y=3; y<=15; y=y+4)
+        {
+          if (y==15) b[y]='o';
+          char temp=b[y];
+          b[y]='o';
+          System.out.println(b[0]+" "+b[1]+" "+b[2]+" "+b[3]);
+          System.out.println(b[4]+" "+b[5]+" "+b[6]+" "+b[7]);
+          System.out.println(b[8]+" "+b[9]+" "+b[10]+" "+b[11]);
+          System.out.println(b[12]+" "+b[13]+" "+b[14]+" "+b[15]);
+          if (y==15) break;
+          b[y]=temp;
+
+          
+          System.out.print("\033[H\033[2J");
+          System.out.flush();
+        }
+    }
+}
+  }
+}
